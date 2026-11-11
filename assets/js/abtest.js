@@ -12,5 +12,3 @@
 	parent_node.appendChild(s);
 })()
 
-  <!-- You may style the button by overriding class "cmp-revoke-consent" -->
-<button class="cmp-revoke-consent">Manage Cookie Preferences</button>
