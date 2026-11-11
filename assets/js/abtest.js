@@ -1,6 +1,5 @@
 
 <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
-<script>
 (function () {
 	var s = document.createElement('script');
 	s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk-loader.js';
@@ -12,4 +11,3 @@
 	var parent_node = document.head || document.body;
 	parent_node.appendChild(s);
 })()
-</script>
