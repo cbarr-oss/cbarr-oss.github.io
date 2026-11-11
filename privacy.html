@@ -48,36 +48,6 @@
            4. (H2.7 stretch, section anchor links) add directly after the iframe:
               <script src="https://EMBED-ORIGIN/static/embed-notice/js/noticeEmbed.js" async></script>
               EMBED-ORIGIN = scheme + host of your embedded link, no path.
-      -->
-      <iframe id="privacy-notice-frame"
-              src="about:blank"
-              data-notice-src="https://privacy-central.securiti.ai/notice-embed/fa3356c0-07c7-47a4-b640-a09de86e6da2" style="border: none;width: 100%;height: 800px;""
-              title="Privacy notice"
-              style="width:100%; min-height:600px; border:0;"></iframe>
-
-	<script src="https://<embed-origin>/static/embed-notice/js/noticeEmbed.js" async></script> <embed-origin>
-		
-      <script>
-        (function () {
-          var f = document.getElementById('privacy-notice-frame');
-          var src = f.getAttribute('data-notice-src');
-          src = (src || '').trim();
-          if (src.indexOf('http') === 0) { f.src = src; }
-          else { f.insertAdjacentHTML('afterend', '<p class="notice">No privacy notice embedded yet.</p>'); f.style.display = 'none'; }
-        })();
-
-        // Auto-resize: Securiti's notice iframe posts { type: 'IFRAME_CONTENT_SIZE', payload: { height } }
-        // (see "Creating a privacy notice using a wizard" > deployment). Verify against your release.
-        window.addEventListener('message', function (event) {
-          var d = event.data;
-          if (d && d.type === 'IFRAME_CONTENT_SIZE' && d.payload && d.payload.height) {
-            document.getElementById('privacy-notice-frame').style.height = d.payload.height + 'px';
-          }
-        });
-      </script>
-      <!-- ===== END SECURITI-PRIVACY-NOTICE ===== -->
-
-
 
 <iframe id="privacy-frame"
         src="https://privacy-central.securiti.ai/notice-embed/fa3356c0-07c7-47a4-b640-a09de86e6da2"
@@ -92,6 +62,14 @@
   })();
 </script>
 <script src="https://privacy-central.securiti.ai/static/embed-notice/js/notice-embed.js" async></script>
+
+
+
+		
+      <!-- ===== END SECURITI-PRIVACY-NOTICE ===== -->
+
+
+
 
 
 
