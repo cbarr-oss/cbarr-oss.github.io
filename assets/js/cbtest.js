@@ -1,5 +1,5 @@
 <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
-<script>(function () {
+(function () {
 	var s = document.createElement('script');
 	s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk-loader.js';
 	s.setAttribute('data-tenant-uuid', 'ed91c418-0537-4d55-90cb-bcb3c584dd65');
@@ -10,4 +10,4 @@
 	var parent_node = document.head || document.body;
 	parent_node.appendChild(s);
 })()
-	</script>
+
